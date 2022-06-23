@@ -10,11 +10,11 @@ import java.util.Objects;
 import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.stream.Collectors;
 
-public class AnimalHungryChanger implements Runnable{
+public class AnimalHungryThread implements Runnable{
     private final Area area;
     private final MainSingleton mainSingleton = MainSingleton.getInstance();
 
-    public AnimalHungryChanger(Area area) {
+    public AnimalHungryThread(Area area) {
         this.area = area;
     }
 
@@ -25,7 +25,7 @@ public class AnimalHungryChanger implements Runnable{
 
             lowerAnimalHungerLevelOnOnePercent();
 
-            System.out.println("Message from: " + Thread.currentThread().getName());
+          //  System.out.println("Message from: " + Thread.currentThread().getName());
             try {
                 Thread.sleep(1000);
             } catch (InterruptedException e) {
@@ -34,7 +34,7 @@ public class AnimalHungryChanger implements Runnable{
         }
     }
 
-    private void lowerAnimalHungerInMainsingleton(){
+   /* private void lowerAnimalHungerInMainsingleton(){
         for (var animal:
         mainSingleton.getAnimalList()) {
             if (animal.getAnimalID() == 23) {
@@ -50,9 +50,9 @@ public class AnimalHungryChanger implements Runnable{
             }
 
         }
-    }
+    }*/
 
-    private void removeAnimal(Animal animal) {
+   /* private void removeAnimal(Animal animal) {
         Cell[][] areaCells = area.getAreaCells();
         for (Cell[] areaCell : areaCells) {
             for (Cell cell : areaCell) {
@@ -69,7 +69,7 @@ public class AnimalHungryChanger implements Runnable{
                 cell.setAnimals(animals);
             }
         }
-    }
+    }*/
 
     private void lowerAnimalHungerLevelOnOnePercent() {
         Cell[][] areaCells = area.getAreaCells();
@@ -79,9 +79,9 @@ public class AnimalHungryChanger implements Runnable{
                 for (int k = 0; k < animals.size(); k++) {
                     if (animals.get(k).getCurrentHungryPercent() > 1.0) {
                         animals.get(k).setCurrentHungryPercent(animals.get(k).getCurrentHungryPercent() - 1.0);
-                        if (animals.get(k).getAnimalID() == 23) {
+                       /* if (animals.get(k).getAnimalID() == 23) {
                             System.out.println(animals.get(k).getName() + " " + animals.get(k).getAnimalID() + " hungry level: " + animals.get(k).getCurrentHungryPercent());
-                        }
+                        }*/
                     } else {
                         animals.set(k, null);
                         mainSingleton.getAnimalList().remove(animals.get(k));

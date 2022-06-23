@@ -1,2 +1,10 @@
-package animals.types;public class Wolf {
+package animals.types;
+
+import animals.general.Predator;
+
+public class Wolf extends Predator {
+
+
+
+
 }

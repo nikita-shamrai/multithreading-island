@@ -1,2 +1,8 @@
-package animals.types;public class Horse {
+package animals.types;
+
+import animals.general.Herbivore;
+
+public class Horse extends Herbivore {
+
+
 }

@@ -6,11 +6,11 @@ import com.fasterxml.jackson.dataformat.yaml.YAMLFactory;
 import java.io.File;
 import java.io.IOException;
 
-public class YamlPareser {
+public class YamlParser {
 
     private final File yamlFile;
 
-    public YamlPareser(String yamlFilePath) {
+    public YamlParser(String yamlFilePath) {
         this.yamlFile = new File(yamlFilePath);
     }
 
