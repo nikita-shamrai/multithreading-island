@@ -1,5 +1,5 @@
-areaHeight: 40
-areaWidth: 40
+areaHeight: 20
+areaWidth: 20
 plantsMaxQuantityForCell: 10
 plantQuantity: 100
 plantLiveTime: 20.0
@@ -12,117 +12,117 @@ animalConfigurations:
       maxQuantityForCell: 30
       cellsPerMove: 3
       fullSatietyWeight: 8
-      currentHungryPercent: 100
-      quantityOnInit: 5
+      currentHungryPercent: 50
+      quantityOnInit: 10
   -   className: "Fox"
       name: "🦊"
       weight: 8.0
       maxQuantityForCell: 30
       cellsPerMove: 2
       fullSatietyWeight: 2
-      currentHungryPercent: 100
-      quantityOnInit: 5
+      currentHungryPercent: 50
+      quantityOnInit: 10
   -   className: "Eagle"
       name: "🦅"
       weight: 6.0
       maxQuantityForCell: 20
       cellsPerMove: 3
       fullSatietyWeight: 1
-      currentHungryPercent: 100
-      quantityOnInit: 5
+      currentHungryPercent: 50
+      quantityOnInit: 10
   -   className: "Boa"
       name: "🐍"
       weight: 15.0
       maxQuantityForCell: 30
       cellsPerMove: 1
       fullSatietyWeight: 3
-      currentHungryPercent: 100
-      quantityOnInit: 5
+      currentHungryPercent: 50
+      quantityOnInit: 10
   -   className: "Bear"
       name: "🐻"
       weight: 500.0
       maxQuantityForCell: 5
       cellsPerMove: 2
       fullSatietyWeight: 80
-      currentHungryPercent: 100
-      quantityOnInit: 5
+      currentHungryPercent: 50
+      quantityOnInit: 10
   -   className: "Sheep"
       name: "🐑"
       weight: 70.0
       maxQuantityForCell: 140
       cellsPerMove: 3
       fullSatietyWeight: 15
-      currentHungryPercent: 100
-      quantityOnInit: 5
+      currentHungryPercent: 50
+      quantityOnInit: 10
   -   className: "Rabbit"
       name: "🐇"
       weight: 2.0
       maxQuantityForCell: 150
       cellsPerMove: 2
       fullSatietyWeight: 0.45
-      currentHungryPercent: 100
-      quantityOnInit: 5
+      currentHungryPercent: 50
+      quantityOnInit: 10
   -   className: "Mouse"
       name: "🐁"
       weight: 0.05
       maxQuantityForCell: 500
       cellsPerMove: 1
       fullSatietyWeight: 0.01
-      currentHungryPercent: 100
-      quantityOnInit: 5
+      currentHungryPercent: 50
+      quantityOnInit: 10
   -   className: "Horse"
       name: "🐎"
       weight: 400.0
       maxQuantityForCell: 20
       cellsPerMove: 4
       fullSatietyWeight: 60
-      currentHungryPercent: 100
-      quantityOnInit: 5
+      currentHungryPercent: 50
+      quantityOnInit: 10
   -   className: "Goat"
       name: "🐐"
       weight: 60.0
       maxQuantityForCell: 140
       cellsPerMove: 3
       fullSatietyWeight: 10
-      currentHungryPercent: 100
-      quantityOnInit: 5
+      currentHungryPercent: 50
+      quantityOnInit: 10
   -   className: "Duck"
       name: "🦆"
       weight: 1.0
       maxQuantityForCell: 200
       cellsPerMove: 4
       fullSatietyWeight: 0.15
-      currentHungryPercent: 100
-      quantityOnInit: 5
+      currentHungryPercent: 50
+      quantityOnInit: 10
   -   className: "Deer"
       name: "🦌"
       weight: 300.0
       maxQuantityForCell: 20
       cellsPerMove: 4
       fullSatietyWeight: 50
-      currentHungryPercent: 100
-      quantityOnInit: 5
+      currentHungryPercent: 50
+      quantityOnInit: 10
   -   className: "Caterpillar"
       name: "🐛"
       weight: 0.01
       maxQuantityForCell: 1000
       cellsPerMove: 0
       fullSatietyWeight: 0
-      currentHungryPercent: 100
-      quantityOnInit: 5
+      currentHungryPercent: 50
+      quantityOnInit: 15
   -   className: "Buffalo"
       name: "🐃"
       weight: 700.0
       maxQuantityForCell: 10
       cellsPerMove: 3
       fullSatietyWeight: 100
-      currentHungryPercent: 100
-      quantityOnInit: 5
+      currentHungryPercent: 50
+      quantityOnInit: 10
   -   className: "Boar"
       name: "🐗"
       weight: 400.0
       maxQuantityForCell: 50
       cellsPerMove: 2
       fullSatietyWeight: 50
-      currentHungryPercent: 100
-      quantityOnInit: 5
+      currentHungryPercent: 50
+      quantityOnInit: 10

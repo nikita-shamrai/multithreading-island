@@ -27,7 +27,7 @@ public class AnimalThread implements Runnable{
 
             animalActions();
 
-            System.out.println("Message from: " + Thread.currentThread().getName());
+           // System.out.println("Message from: " + Thread.currentThread().getName());
             System.out.println("Iteration #" + atomicInteger.incrementAndGet());
 
             try {
