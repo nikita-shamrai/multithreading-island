@@ -1,8 +1,6 @@
 package controller;
 
-import animals.general.Animal;
 import area_and_cell.Area;
-import area_and_cell.Cell;
 import configuration.Config;
 import configuration.YamlParser;
 import initialization.AnimalInitialization;
@@ -11,12 +9,11 @@ import multithreading.AnimalHungryThread;
 import multithreading.AnimalThread;
 import multithreading.PlantsThread;
 import multithreading.VisualizationThread;
-import plants.Plant;
 import util.MainSingleton;
 
-import java.util.List;
 import java.util.Set;
-import java.util.concurrent.*;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 public class Controller {
 
@@ -27,7 +24,7 @@ public class Controller {
     public static volatile boolean programIsRunning = true;
 
     public void startApp() {
-        YamlParser yamlParser = new YamlParser("src/configuration.yaml");
+        YamlParser yamlParser = new YamlParser("src/main/resources/configuration.yaml");
         this.config = yamlParser.configInitialize();
 
         AreaInitialization areaInitialization = new AreaInitialization(config);
@@ -51,11 +48,8 @@ public class Controller {
         executorService.shutdown();
 
         while (programIsRunning) {
-            /*System.out.println("Message from: " + Thread.currentThread().getName());
-            System.out.println("TOTAL PLANTS - " + mainSingleton.getPlantList().size());
-            System.out.println("TOTAL ANIMALS - " + mainSingleton.getAnimalList().size());*/
             Set<Thread> threadSet = Thread.getAllStackTraces().keySet();
-            System.out.println("THREADSET - " + threadSet.toString());
+           // System.out.println("THREADSET - " + threadSet.toString());
             if (mainSingleton.getAnimalList().size() == 0) {
                 programIsRunning = false;
                 executorService.shutdownNow();

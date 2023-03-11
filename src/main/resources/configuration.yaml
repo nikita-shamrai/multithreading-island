@@ -5,7 +5,7 @@ plantQuantity: 100
 plantLiveTime: 20.0
 simulationDuration: 360
 
-animalConfigurations: #animal or animalConfig???
+animalConfigurations:
   -   className: "Wolf"
       name: "🐺"
       weight: 50.0
